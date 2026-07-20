@@ -1,0 +1,10 @@
+st.set_page_config(page_title = "Chatbot", page_icon = "📄", layout = "centered") 
+st.title("simple chatbot") 
+st.write("enter question")
+if not os.path.exists(DB_PATH): 
+    st.warn("no DB. run ingest")
+question = st.text_area("question", height = 120, placeholder = " ")
+ask_button = st.button("ask")
+if ask_button: 
+    answer = answer_question(question) 
+    st.write(answer)
