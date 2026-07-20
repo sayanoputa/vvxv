@@ -1,0 +1,6 @@
+DATA_PATH = "data/{filename}" 
+DB_PATH = VECTORSTORE 
+EMBEDDING_MODEL = "nomic-embed-text" 
+LLM_MODEL = "llama3.1"
+CHUNK_SIZE = 800 
+CHUNK_OVERLAP = 120 
